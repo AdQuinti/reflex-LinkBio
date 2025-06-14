@@ -1,4 +1,4 @@
-"""Web proyecto probando reflex
+"""Web PORFOLIO proyecto reflex
 utiliza componente de react y verdaderamente libreria de chakra """
 
 import reflex as rx
@@ -13,6 +13,7 @@ from reflex_LinkBio.styles.styles import Size as Size
 #    pass
 
 def index() -> rx.Component:
+    #index
     return rx.box(
         rx.script("document.documentElement.lang='es'"), # html -> meta spanish
         navbar(), # llamamos instancia navbar
@@ -46,8 +47,9 @@ app = rx.App(
 ) # carga lo q indiquemos para todos
 app.add_page(
     index,
-    title="AdQuinti - Site.Web",
-    description="Soy desarrollador se SiteWeb y programador de Python y Java. También poseo conocimientos de Reflex, Css3, Html5, SQL, MySQL, ...",
+    title="AdQuinti - Porfolio",
+    description="Docente de TIC, conocimientos en Artificial Intelling (AI), Ciberseguridad, developer siteWeb, programador en backend y frontend, Java, Python, Reflex, Css3, Html5, SQL, MySQL, redes ...",
     image="avatar.jpg"
     ) # añade pag a aplicación
-app.compile() # compila
+"""ya no es necesaria COMPILE"""
+#app.compile() 

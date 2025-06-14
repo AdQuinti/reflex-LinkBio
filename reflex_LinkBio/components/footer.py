@@ -33,7 +33,7 @@ def footer() -> rx.Component: # retorna reflex componentes
         margin_bottom=Size.BIG.value, # espacio pr abajo
         padding_bottom=Size.BIG.value,
         padding_x=Size.BIG.value,   # Design-Responsive - mantenga margenes ambos lados
-        spacing=Size.DEFAULT.value,
+        spacing='2', #Size.DEFAULT.value,
     # color
         color=TextColor.TXTFOOTER.value # TXT color
     ) # END vstack

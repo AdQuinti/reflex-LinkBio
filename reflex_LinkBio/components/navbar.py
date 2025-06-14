@@ -7,12 +7,12 @@ def navbar() -> rx.Component: # retorna reflex componente
     return rx.hstack (
         rx.box(
             #rx.image (src="favicon.ico"),
-            rx.span(
+            rx.text(
                 "Ad",
                 color=TextColor.TXTPRIMARY.value,
                 font_size=Size.DEFAULT.value
             ), # TextColor.TXTPRIMARY.value),
-            rx.span("Quinti",
+            rx.text("Quinti",
                 color=TextColor.TXTPRIMARY.value,
                 font_size=Size.DEFAULT.value
             ),

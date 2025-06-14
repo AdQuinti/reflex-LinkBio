@@ -20,7 +20,7 @@ def link_button(title: str, body: str, image: str, url: str) -> rx.Component: # 
                     rx.text(body, style=styles.button_body_style), # repetimos boton txt
                 # colocación
                     align_items="start", # se aline al principio
-                    spacing=Size.SMALL.value,
+                    spacing='1', #Size.SMALL.value,
                     padding_y=Size.SMALL.value,
                     padding_right=Size.SMALL.value # empuja a izq. DESIGN-RESPONSIVE
                 ),

@@ -19,11 +19,12 @@ STYLESHEETS = ["https://fonts.googleapis.com/css2?family=Pacifico:wght@400&displ
 # Sizes
 class Size(Enum): # encapsulado espaciadores de la web
     ZERO = "0.px !importat"
-    SMALL = "0.5em"
-    MEDIUM = "0.8em"
-    DEFAULT = "1em"
-    LARGE = "1.5em"
-    BIG = "2em"
+    SMALL = "0.4em"
+    SLIM = "0.7em"
+    MEDIUM = "0.9em"
+    DEFAULT = "1.2em"
+    LARGE = "1.8em"
+    BIG = "3em"
     VERY_BIG = "4em"
 
 # Components Styles
@@ -31,12 +32,12 @@ BASE_STYLE = {  # APLICA_A_TODO
     "font_family": Font.DEFAULT.value, # referecia a las fuentes
     "font_weight": FontWeight.LIGHT.value, # peso de la fuente
     "background_color": Color.BACKGROUND.value, # color fondo
-    rx.Heading:{ # cabecera web
+    rx.heading:{ # cabecera web
         "color": TextColor.TXTHEADER.value, # referencia color txt
         "font_family": Font.TITLE.value, # referencia fuente
         "font_weight": FontWeight.MEDIUM.value  # peso de la fuente
     },
-    rx.Button: { # td botones aplicación cogeran este estilo
+    rx.button: { # td botones aplicación cogeran este estilo
         "width": "100%",
         "height": "100%",
         "padding": Size.SMALL.value,
@@ -50,7 +51,7 @@ BASE_STYLE = {  # APLICA_A_TODO
             #"color": TextColor.TXTPRIMARY.value, # color texto botones
         }
     },
-    rx.Link: {
+    rx.link: {
         "text_decoration": "none",  # desaparesca subrayadado de link
         "_hover": {}  # desaparesca subrayadado de link
     }

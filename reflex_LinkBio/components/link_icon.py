@@ -1,6 +1,6 @@
 # iconos redes sociales
 import reflex as rx
-#import reflex_LinkBio.styles.styles as styles
+#import reflex-LinkBio.styles.styles as styles
 from reflex_LinkBio.styles.styles import Size
 
 def link_icon(image: str, url: str, alt: str) -> rx.Component:
